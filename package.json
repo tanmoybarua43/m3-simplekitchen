@@ -1,0 +1,35 @@
+{
+  "name": "express-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon ./start.js",
+    "lite": "lite-server",
+    "scss": "sass css:css",
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "sass --watch css:css",
+    "watch:all": "run-p watch:scss lite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "http-auth": "^4.1.4",
+    "mongoose": "^5.12.0",
+    "pug": "^3.0.2",
+    "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "global": "^4.4.0",
+    "jquery": "^3.4.1",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "popper.js": "^1.12.9"
+  }
+}

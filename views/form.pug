@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  main
+    #intro-text
+      span Simple Kitchen
+      h3 Simple & Comforting Recipes All Year Round
+      p Pan-seared chicken, Grill shrimp, mac & cheese—need we say more?
+
+    #intro-image
+      //- img(src='/images/louisiana-barbecued-shrimp.webp', alt='Louisiana Barbecued Shrimp')
+      
+    .container
+      .row.justify-content-center
+        .col-md-12
+          .card
+            .card-header
+              h3 Register to subscribe
+            .card-body
+              if errors
+                .alert.alert-danger
+                  ul.mb-0
+                    each error in errors
+                      li ! Error : #{error.msg}
+              form(action='/register', method='post')
+                .form-group
+                  label(for='name') Name:
+                  input.form-control(type='text', name='name', id='name', value=(data ? data.name : ''))
+                .form-group
+                  label(for='email') Email:
+                  input.form-control(type='email', name='email', id='email', value=(data ? data.email : ''))
+                .form-group
+                  button.btn.btn-primary(type='submit') Register
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')

@@ -1,0 +1,85 @@
+nav {
+  background-color: #d4af37;
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Sacramento", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #d4af37;
+}
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+main #intro-text {
+  width: 40%;
+  text-align: center;
+  height: auto;
+}
+main #intro-text span {
+  font-size: 2rem;
+  color: #d4af37;
+}
+main #intro-text h3 {
+  font-size: 1.5rem;
+  color: #000000;
+}
+main #intro-text p {
+  font-size: 1rem;
+  color: #000000;
+}
+main #intro-text .submit-button {
+  padding: 10px 20px;
+  background-color: #d4af37;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+main #intro-image {
+  width: 60%;
+}
+main #intro-image img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #d4af37;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=styles.css.map */

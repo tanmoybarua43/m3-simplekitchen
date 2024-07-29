@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  main
+    h1= title
+    table
+      thead
+        tr
+          th Name
+          th Email
+      tbody
+        each registration in registrations
+          tr
+            td= registration.name
+            td= registration.email

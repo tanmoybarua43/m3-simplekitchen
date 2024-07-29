@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/styles.css')
+  body
+    header
+      nav
+        ul
+          li: a(href='/') Home
+          li | 
+          li: a(href='#') Blog
+          li |
+          li: a(href='/form') Register
+    block content
+    footer
+      p &copy; Copyright 2022 Simple Kitchen

@@ -1,0 +1,71 @@
+@import 'colors';
+@import 'nav';
+
+body {
+  font-family: 'Sacramento', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: $white-color;
+}
+
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: $primary-color;
+    a {
+      color: $white-color;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f3f3f3;
+
+  #intro-text {
+    width: 40%;
+    text-align: center;
+    height: auto;
+
+    span {
+      font-size: 2rem;
+      color: $primary-color;
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: $black-color;
+    }
+    p {
+      font-size: 1rem;
+      color: $black-color;
+    }
+    .submit-button {
+      padding: 10px 20px;
+      background-color: $primary-color;
+      color: $white-color;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  #intro-image {
+    width: 60%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: $primary-color;
+  color: $white-color;
+}
